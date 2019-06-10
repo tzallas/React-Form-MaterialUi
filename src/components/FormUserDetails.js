@@ -22,21 +22,21 @@ export class FormUserDetails extends Component {
                     <TextField
                         hintText="Enter Your First Name"
                         floatingLabelText="First Name"
-                        onChange={this.props.handleChange}
+                        onChange={this.props.handleChange("firstName")}
                         defaultValue={this.props.values.firstName}
                     />
                     <br />
                     <TextField
                         hintText="Enter Your Last Name"
                         floatingLabelText="Last Name"
-                        onChange={this.props.handleChange}
+                        onChange={this.props.handleChange("lastName")}
                         defaultValue={this.props.values.lastName}
                     />
                     <br />
                     <TextField
                         hintText="Enter Your Email"
                         floatingLabelText="Email"
-                        onChange={this.props.handleChange}
+                        onChange={this.props.handleChange("email")}
                         defaultValue={this.props.values.email}
                     />
                     <br />
