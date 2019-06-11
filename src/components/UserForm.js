@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import FormPersonalDetails from "./FormPersonalDetails";
 import FormUserDetails from "./FormUserDetails";
 import Confirm from "./Confirm";
-import Success from "./Succes"
+import Success from "./Success"
 
 export class UserForm extends Component {
     state = {
@@ -63,8 +63,16 @@ export class UserForm extends Component {
                     />
                 )
             case 4:
-                return <h1>Seccess</h1>
-
+                return (
+                    <Success
+                        prevStep={this.prevStep}
+                        values={values}
+                    />
+                )
+            default:
+                return (
+                    <h1>Form</h1>
+                )
         }
     }
 }
